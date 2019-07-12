@@ -261,7 +261,7 @@ import httpclient, json
 
 let client = newHttpClient()
 let res = client.request("https://blockstor.bitzeny.jp/api/addr/ZenyAddress...xyz")
-if res.status == "200 OK":
+if res.status == Http200:
   echo parseJson(res.body)
 ```
 
@@ -342,7 +342,7 @@ let client = newHttpClient()
 client.headers = newHttpHeaders({"Content-Type": "application/json"})
 var postdata = %*{"addrs": ["ZenyAddress1...xyz", "ZenyAddress2...xyz"]}
 let res = client.request("https://blockstor.bitzeny.jp/api/addrs", httpMethod = HttpPost, body = $postdata)
-if res.status == "200 OK":
+if res.status == Http200:
   echo parseJson(res.body).pretty
 ```
 
