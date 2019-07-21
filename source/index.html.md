@@ -664,7 +664,7 @@ addrs | | |
 ### Response
 Attribute |   |   | Description
 --------- | - | - | -----------
-err | | | 0 - 成功, 5 - APIキーが不正
+err | | | 0 - 成功, 3 - ロールバック中, 4 - ロールバックが発生した, 5 - APIキーが不正
 res | | | Blockstor シーケンス番号
 
 ※[Blockstor Config - 設定](#blockstor-config) の apikey を設定してください。
@@ -692,7 +692,7 @@ sequence | number | required | false | 同期済みの Blockstor シーケンス
 ### Response
 Attribute |   |   | Description
 --------- | - | - | -----------
-err | | | 0 - 成功, 3 - ロールバック中, 4 - ロールバックが発生した, 5 - APIキーが不正
+err | | | 0 - 成功, 3 - ロールバック中, 4 - ロールバックが発生した, 5 - APIキーが不正, 8 - 指定したシーケンス番号の値が大きく不正
 res | | | err が 4 の場合のみ、同期済みの Blockstor シーケンス番号
 
 ※[Blockstor Config - 設定](#blockstor-config) の apikey を設定してください。
