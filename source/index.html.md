@@ -153,6 +153,34 @@ TCP接続はフルノードの機能を持っていないので、必ず自前�
 http と WebSocket を一つのポート番号で動作させることもできます。その場合、http_port と ws_port に同じポート番号を設定してください。
 </aside>
 
+### BitcoinJS パラメータ設定
+networks."coin name" のパラメータ説明です。
+
+Parameter |   | Requirements | Description
+--------- | - | ------------ | -----------
+messagePrefix | | required | メッセージにサインをするときに使用するプレフィックス文字列
+bech32        | | optional | bech32プレフィックスアドレス文字列
+bech32_extra  | | optional | bech32パラメータ以外にサポートするbech32プレフィックスアドレス文字列のArray
+bip32 | public  | required | base58Prefixes EXT_PUBLIC_KEY
+bip32 | private | required | base58Prefixes EXT_SECRET_KEY
+pubKeyHash  | | required | base58Prefixes PUBKEY_ADDRESS
+scriptHash  | | required | base58Prefixes SCRIPT_ADDRESS
+scriptHash2 | | optional | base58Prefixes SCRIPT_ADDRESS2 (Monacoin用)
+wif     | | required | base58Prefixes SECRET_KEY
+wif_old | | optional | base58Prefixes OLD_SECRET_KEY (Monacoin用)
+
+<aside class="notice">
+messagePrefix は、core の src/validation.cpp strMessageMagic を参照してください。先頭の数字は、string の文字列長を設定してください。
+</aside>
+
+<aside class="notice">
+base58Prefixes は、core の src/chainparams.cpp を参照してください。
+</aside>
+
+<aside class="notice">
+bech32_extra, scriptHash2, wif_old は、BitcoinJS標準のパラメータではありません。
+</aside>
+
 # Blockstor Startup - 起動
 
 Node.js で Blockstor を起動する。
