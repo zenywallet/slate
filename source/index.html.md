@@ -188,7 +188,7 @@ Node.js で Blockstor を起動する。
 > Blockstor の起動方法
 
 ```
-$node index.js
+$ node index.js
 2019-07-04 02:55:42 height(blockstor/coind)=0/1617610 delay=1617610 - start
 2019-07-04 02:58:36 height(blockstor/coind)=60343/1617612 delay=1557269 - 2015-01-10 07:55:14 (TCP mode)
 ```
