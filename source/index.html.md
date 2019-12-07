@@ -693,7 +693,11 @@ addrs | | |
 Attribute |   |   | Description
 --------- | - | - | -----------
 err | | | 0 - 成功, 3 - ロールバック中, 4 - ロールバックが発生した, 5 - APIキーが不正
-res | | | Blockstor シーケンス番号
+res | { | |
+ | | sequence | Blockstor シーケンス番号
+ | | last | 最新ブロックの最後の Blockstor シーケンス番号
+ | } | |
+
 
 ※[Blockstor Config - 設定](#blockstor-config) の apikey を設定してください。
 
