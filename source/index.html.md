@@ -425,7 +425,7 @@ gt | optional | false | 指定されたシーケンス番号より大きなデ�
 lte | optional | false | 指定されたシーケンス番号以下のデータを取得する (less than or equal)
 lt | optional | false | 指定されたシーケンス番号より小さなデータを取得する (less than)
 limit | optional | 1000 | 取得するデータ数, 最大50000
-seqbreak | optional | 1 | 0 - 同一シーケンス番号を考慮しない, 1 - 同一シーケンス番号を分割しない
+seqbreak | optional | 0 | 0 - 同一シーケンス番号を分割しない, 1 - 同一シーケンス番号を考慮せず分割する
 reverse | optional | 0 | 0 - シーケンス番号の古い順, 1 - シーケンス番号の新しい順
 unconf | optional | 0 | 0 - 未確認の受信トランザクションを含めない, 1 - 未確認の受信トランザクションを含む
 
@@ -487,7 +487,7 @@ gt | optional | false | 指定されたシーケンス番号より大きなデ�
 lte | optional | false | 指定されたシーケンス番号以下のデータを取得する (less than or equal)
 lt | optional | false | 指定されたシーケンス番号より小さなデータを取得する (less than)
 limit | optional | 1000 | 取得するデータ数, 最大50000
-seqbreak | optional | 1 | 0 - 同一シーケンス番号を考慮しない, 1 - 同一シーケンス番号を分割しない
+seqbreak | optional | 0 | 0 - 同一シーケンス番号を分割しない, 1 - 同一シーケンス番号を考慮せず分割する
 reverse | optional | 0 | 0 - シーケンス番号の古い順, 1 - シーケンス番号の新しい順
 unconf | optional | 0 | 0 - 未確認の受信トランザクションを含めない, 1 - 未確認の受信トランザクションを含む
 
@@ -517,7 +517,7 @@ gt | optional | false | 指定されたシーケンス番号より大きなデ�
 lte | optional | false | 指定されたシーケンス番号以下のデータを取得する (less than or equal)
 lt | optional | false | 指定されたシーケンス番号より小さなデータを取得する (less than)
 limit | optional | 1000 | 取得するデータ数, 最大50000
-seqbreak | optional | 1 | 0 - 同一シーケンス番号を考慮しない, 1 - 同一シーケンス番号を分割しない
+seqbreak | optional | 0 | 0 - 同一シーケンス番号を分割しない, 1 - 同一シーケンス番号を考慮せず分割する
 reverse | optional | 1 | 0 - シーケンス番号の古い順, 1 - シーケンス番号の新しい順
 
 ### Headers
@@ -584,7 +584,7 @@ gt | optional | false | 指定されたシーケンス番号より大きなデ�
 lte | optional | false | 指定されたシーケンス番号以下のデータを取得する (less than or equal)
 lt | optional | false | 指定されたシーケンス番号より小さなデータを取得する (less than)
 limit | optional | 1000 | 取得するデータ数, 最大50000
-seqbreak | optional | 1 | 0 - 同一シーケンス番号を考慮しない, 1 - 同一シーケンス番号を分割しない
+seqbreak | optional | 0 | 0 - 同一シーケンス番号を分割しない, 1 - 同一シーケンス番号を考慮せず分割する
 reverse | optional | 1 | 0 - シーケンス番号の古い順, 1 - シーケンス番号の新しい順
 
 ### Headers
