@@ -1048,8 +1048,8 @@ Blockstor が扱う数量の単位はすべて Satoshi である。
 
 ```javascript
 function conv_coin(uint64_val) {
-    strval = uint64_val.toString();
-    val = parseInt(strval);
+    var strval = uint64_val.toString();
+    var val = parseInt(strval);
     if(val > Number.MAX_SAFE_INTEGER) {
         var d = strval.slice(-8).replace(/0+$/, '');
         var n = strval.substr(0, strval.length - 8);
