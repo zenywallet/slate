@@ -828,7 +828,10 @@ Parameter | Requirements | Default | Description
         ]
       }
     ],
-    "fee": 381
+    "fee": 381,
+    "height": 1617119,
+    "time": 1562164531,
+    "sequence": 3197162
   }
 }
 ```
@@ -844,6 +847,11 @@ res | | | err が 1 の場合、getRawTransaction の処理結果 {code: code, m
  | | value | 数量
  | | addrs | アドレスリスト
  | fee | | トランザクション手数料
+ | height | | ブロック高 ※
+ | time | | 時間 (ブロックの時間) ※
+ | sequence | | Blockstor シーケンス番号 ※
+
+※height, time, sequence はトランザクションが確認済みの場合のみ存在する
 
 <aside class="notice">
 トランザクション情報取得機能を使用する場合、coind に txindex=1 を指定してください。指定しなかった場合も問題なく動作するようにフォールバックを実装していますが、ブロックからトランザクションデータを取り出すので、少しパフォーマンスが悪くなります。
